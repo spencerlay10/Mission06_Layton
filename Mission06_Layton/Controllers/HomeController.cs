@@ -26,6 +26,7 @@ namespace Mission06_Layton.Controllers
         [HttpPost]
         public IActionResult EnterMovie(Form entry)
         {
+            
             _context.Movies.Add(entry); // Add record to database
             _context.SaveChanges();
 

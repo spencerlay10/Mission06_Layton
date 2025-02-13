@@ -27,9 +27,8 @@
     </select><br />
     <label asp-for="Edited">Was it edited?</label>
     <select asp-for="Edited">
-        <option value="" selected>-- Select --</option> <!-- Default blank option -->
         <option value="true">Yes</option>
-        <option value="false">No</option>
+        <option value="false" selected>No</option>
     </select><br />
     <label asp-for="LentTo">Lent to:</label>
     <input asp-for="LentTo" /><br />
