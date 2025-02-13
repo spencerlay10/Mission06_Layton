@@ -2,14 +2,18 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!--Home page-->
 <h1>The Joel Hilton Film Collection</h1>
 
 <div>
-    <p>Today is your lucky day. You may have the opportunity to date this...</p>
-	<img hieght="500" src="~/img/joelhiltonheadshot.jpg" />
+    <p>Joel enjoys reviewing movies and performing comedy. This site is a way for you to enter movies you like and see when Joel is performing.</p>
+	
+    <!--Image of Joel Hilton-->
+    <img hieght="500" src="~/img/joelhiltonheadshot.jpg" />
 </div>
 <br />
 
 <div>
+    <!--Link that sends the user to a movie form-->
     <a asp-controller="Home" asp-action="EnterMovie">Enter New Movie</a>
 </div>

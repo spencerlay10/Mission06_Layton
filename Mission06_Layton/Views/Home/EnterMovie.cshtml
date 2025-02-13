@@ -5,19 +5,26 @@
     ViewData["Title"] = "Enter New Movie";
 }
 
+<!--Allows for the Form to be referenced-->
 @model Form
 
 <h1>Enter New Movie</h1>
 
+<!--Form for entering a new movie-->
 <form method="post" asp-action="EnterMovie" asp-controller="Home">
+    
     <label asp-for="Category">Category:</label>
     <input asp-for="Category" required/><br />
+    
     <label asp-for="Title">Title:</label>
     <input asp-for="Title" required /><br />
+    
     <label asp-for="Year">Year:</label>
     <input asp-for="Year" required /><br />
+    
     <label asp-for="Director">Director:</label>
     <input asp-for="Director" required /><br />
+    
     <label asp-for="Rating">Rating:</label>
     <select asp-for="Rating" required>
         <option value="G">G</option>
@@ -25,13 +32,16 @@
         <option value="PG-13" selected>PG-13</option>
         <option value="R">R</option>
     </select><br />
+    
     <label asp-for="Edited">Was it edited?</label>
     <select asp-for="Edited">
         <option value="true">Yes</option>
         <option value="false" selected>No</option>
     </select><br />
+    
     <label asp-for="LentTo">Lent to:</label>
     <input asp-for="LentTo" /><br />
+    
     <label asp-for="Notes">Notes:</label>
     <input asp-for="Notes" maxlength="25"/><br />
 
